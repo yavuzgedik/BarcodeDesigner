@@ -1,0 +1,22 @@
+﻿@{
+    ViewBag.Title = "Barcode Designer";
+}
+
+<h2>Barcode</h2>
+
+<form action="/Home/Index" method="post" class="form-inline">
+
+    <div class="form-group">
+        <input type="number"  class="form-control" name="text" required> 
+    </div>
+    <button type="submit" class="btn btn-primary">Post</button>
+</form>
+
+<br />
+
+@if (ViewBag.Image != null)
+{
+    <img class="img-responsive" src='@ViewBag.Image.ImageUrl' />
+}
+
+
