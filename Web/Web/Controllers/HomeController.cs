@@ -10,7 +10,7 @@ namespace Web.Controllers
 {
     public class HomeController : Controller
     {
-        // GET: Home
+        // SOURCE: https://www.aspsnippets.com/Articles/Dynamically-Generate-and-Display-Barcode-Image-in-ASPNet.aspx
         public ActionResult Index()
         {
             return View();
